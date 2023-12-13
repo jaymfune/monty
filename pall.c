@@ -1,5 +1,12 @@
 #include "monty.h"
-#include <stdio.h>
+
+/**
+ * pall - prints all values on the stack
+ * @stack: pointer to the stack
+ *
+ * Description: Prints all values on the stack from top to bottom.
+ * If the stack is empty, does nothing.
+ */
 
 void pall(const Stack *stack)
 {

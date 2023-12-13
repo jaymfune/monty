@@ -1,6 +1,12 @@
 #include "monty.h"
-#include <stdio.h>
-#include <stdlib.h>
+/**
+ * push - pushes an element onto the stack
+ * @stack: pointer to the stack
+ * @value: value to be pushed
+ *
+ * Description: Pushes the given value onto the stack.
+ * If the stack is full, prints an error message and exits with failure.
+ */
 
 void initialize(Stack *stack)
 {
