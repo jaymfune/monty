@@ -15,6 +15,7 @@ void pall(const Stack *stack)
 
 	for (i = stack->top; i >= 0; --i)
 	{
-		printf("%d\n", stack->items[i]);
+		printf("%d ", stack->items[i]);
 	}
+	printf("\n");
 }
