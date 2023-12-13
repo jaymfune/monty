@@ -1,6 +1,7 @@
 #include "monty.h"
 
-int main() {
+int main()
+{
     Stack myStack;
     initialize(&myStack);
 
@@ -10,7 +11,13 @@ int main() {
     push(&myStack, 30);
 
     pall(&myStack);
-    pint(&myStack);
 
-    return 0;
+    /* pint */
+    stack_t *myStack = NULL;
+    bus = malloc(sizeof(stack_t)); // Allocate memory for bus
+
+    pint(&myStack, 42);
+    free(bus)
+
+        return 0;
 }
