@@ -21,6 +21,6 @@ typedef struct stack_t
 void initialize(Stack *stack);
 void push(Stack *stack, int value);
 void pall(const Stack *stack);
-void pint(stack_t **head, unsigned int counter);
+void pint(const Stack *stack);
 
 #endif /* MONTY_H */

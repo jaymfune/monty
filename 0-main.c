@@ -13,11 +13,7 @@ int main()
     pall(&myStack);
 
     /* pint */
-    stack_t *myStack = NULL;
-    bus = malloc(sizeof(stack_t)); // Allocate memory for bus
+    void pint(const Stack *stack);
 
-    pint(&myStack, 42);
-    free(bus)
-
-        return 0;
+    return 0;
 }
