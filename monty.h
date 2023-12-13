@@ -15,5 +15,6 @@ typedef struct
 void initialize(Stack *stack);
 void push(Stack *stack, int value);
 void pall(const Stack *stack);
+void pint(const Stack *stack);
 
 #endif /* MONTY_H */

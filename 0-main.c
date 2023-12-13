@@ -10,6 +10,7 @@ int main() {
     push(&myStack, 30);
 
     pall(&myStack);
+    pint(&myStack);
 
     return 0;
 }
