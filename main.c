@@ -12,6 +12,13 @@ int main(void)
     /* Test pint on non-empty stack */
     pint(&stack, line_number);
 
+    /* Test pop on non-empty stack */
+    pop(&stack, line_number);
+    pall(&stack, line_number);
+
+    /* Test pop on empty stack */
+    pop(&stack, line_number);
+
     /* Test push with invalid input */
     push(&stack, 20, line_number);
     pall(&stack, line_number);
