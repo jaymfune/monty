@@ -1,19 +1,19 @@
 #include "monty.h"
 
-int main()
-{
+int main() {
     Stack myStack;
     initialize(&myStack);
 
-    /* Example usage of push and pall */
+    // Example usage of push, pop, and swap
     push(&myStack, 10);
     push(&myStack, 20);
     push(&myStack, 30);
 
-    pall(&myStack);
+    pop(&myStack, 1);
+    swap(&myStack, 2);
 
-    /* pint */
-    void pint(const Stack *stack);
+    pall(&myStack);
 
     return 0;
 }
+
