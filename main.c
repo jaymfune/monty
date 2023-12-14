@@ -1,5 +1,3 @@
-// main.c
-
 #include "monty.h"
 
 int main(void)
