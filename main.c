@@ -3,7 +3,6 @@
 int main(void)
 {
     stack_t *stack = NULL;
-    instruction_t instruction;
     unsigned int line_number = 1;
 
     /* Test push with valid integer */

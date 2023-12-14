@@ -4,7 +4,7 @@
  * push - pushes an element to the stack
  * @stack: double pointer to the beginning of the stack
  * @value: value to be pushed onto the stack
- * @line_number: line number in the Monty byte code file
+ * @line_number: unused parameter - remove it
  */
 void push(stack_t **stack, int value, unsigned int line_number)
 {
