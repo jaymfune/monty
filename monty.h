@@ -47,6 +47,7 @@ typedef struct instruction_s
 } instruction_t;
 
 void f_pall(stack_t **head, unsigned int number);
+void f_push(stack_t **head, unsigned int counter);
 
 #endif
 
