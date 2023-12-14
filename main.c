@@ -9,6 +9,9 @@ int main(void)
     push(&stack, 10, line_number);
     pall(&stack, line_number);
 
+    /* Test pint on non-empty stack */
+    pint(&stack, line_number);
+
     /* Test push with invalid input */
     push(&stack, 20, line_number);
     pall(&stack, line_number);
