@@ -7,13 +7,13 @@ int main(void)
 
     push(&stack, 10, line_number);
     push(&stack, 20, line_number);
-    push(&stack, 30, line_number);
+    push(&stack, 0, line_number);
 
-    swap(&stack, line_number);
-    pall(&stack, line_number);
+    div_op(&stack, line_number);
+    pall(&stack, line_number); /* Print the elements after div */
 
     pop(&stack, line_number);
-    swap(&stack, line_number);
+    div_op(&stack, line_number);
 
     /* Clean up the stack (free memory) */
     while (stack != NULL)
