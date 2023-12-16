@@ -7,7 +7,6 @@
  */
 void nop(stack_t **stack, unsigned int line_number)
 {
-    (void)stack;
-    (void)line_number;
-    /* This function intentionally does nothing */
+	(void)stack;
+	(void)line_number;
 }
