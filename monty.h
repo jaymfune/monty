@@ -35,11 +35,11 @@ typedef struct stack_s
  */
 typedef struct bus_s
 {
-	char *arg;
-	FILE *file;
-	char *content;
-	int lifi;
-}  bus_t;
+    char *arg;
+    FILE *file;
+    char *content;
+    int lifi;
+} bus_t;
 extern bus_t bus;
 
 /**
@@ -67,6 +67,6 @@ void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void div_op(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
-int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 
 #endif /* MONTY_H */
