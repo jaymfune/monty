@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -57,7 +58,7 @@ typedef struct instruction_s
 } instruction_t;
 
 /* Function prototypes */
-void push(stack_t **stack, int value, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
@@ -68,5 +69,6 @@ void sub(stack_t **stack, unsigned int line_number);
 void div_op(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+bool is_number(const char *str);
 
 #endif /* MONTY_H */

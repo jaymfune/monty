@@ -3,18 +3,22 @@
 /**
  * push - pushes an element to the stack
  * @stack: double pointer to the beginning of the stack
- * @value: value to be pushed onto the stack
- * @line_number: unused parameter - remove it
+ * @line_number: line number
  */
-void push(stack_t **stack, int value, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
+	/* Get the value from bus */
+	char *arg = bus.arg;
 	stack_t *new_node;
-	(void)line_number;
-	if (!value)
+	int value;
+
+	if (!arg || !is_number(arg))
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
+
+	value = atoi(arg);
 
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
